@@ -6,24 +6,21 @@ import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 
 fun main() = application {
-    val windowsState = rememberWindowState(size = DpSize(1200.dp, 800.dp))
+    val windowsState = rememberWindowState(size = DpSize(800.dp, 1200.dp))
 
     Window(
         onCloseRequest = ::exitApplication,
         title = "Ejemplo para practicar",
         state = windowsState
     ) {
-
-        //Ejercicio1()
-        Ejercicio2()
-        //Ejercicio3()
-        //Ejercicio4()
-        //Ejercicio5()
-        //Ejercicio6()
-        //Ejercicio7()
-
         Ejercicio1()
-        Ejercicio2()
+        /*Ejercicio2()
+        Ejercicio3()
+        Ejercicio4()
+        Ejercicio5()
+        Ejercicio6()
+        Ejercicio7()
+         */
     }
 
 }

@@ -31,7 +31,7 @@ fun Ejercicio1() {
                 modifier = Modifier
                     .width(50.dp)
                     .height(50.dp)
-                    .background(Color.Blue)
+                    .background(Color.Cyan)
             )
         }
     }
