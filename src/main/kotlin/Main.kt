@@ -12,12 +12,12 @@ fun main() = application {
         title = "Ejemplo para practicar",
         state = windowsState
     ) {
-        Ejercicio1()
-        Ejercicio2()
-        Ejercicio3()
+        //Ejercicio1()
+        //Ejercicio2()
+        //Ejercicio3()
         Ejercicio4()
-        Ejercicio5()
-        Ejercicio6()
-        Ejercicio7()
+        //Ejercicio5()
+        //Ejercicio6()
+        //Ejercicio7()
     }
 }
