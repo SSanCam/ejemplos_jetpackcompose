@@ -13,6 +13,7 @@ import androidx.compose.ui.text.font.FontWeight
 @Preview
 fun Ejercicio2() {
 
+    // Cuadrado centrado a la ventana con texto.
     Box(
         modifier = Modifier
             .background(Color.White)

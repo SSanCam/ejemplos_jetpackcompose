@@ -1,4 +1,3 @@
-
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
@@ -14,13 +13,11 @@ fun main() = application {
         state = windowsState
     ) {
         Ejercicio1()
-        /*Ejercicio2()
+        Ejercicio2()
         Ejercicio3()
         Ejercicio4()
         Ejercicio5()
         Ejercicio6()
         Ejercicio7()
-         */
     }
-
 }

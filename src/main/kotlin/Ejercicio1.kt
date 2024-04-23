@@ -15,10 +15,9 @@ import androidx.compose.ui.Alignment
 @Preview
 fun Ejercicio1() {
     // Uso único Box
+    // Cuadrado centrado a la ventana.
     Box(
         modifier = Modifier
-            .background(Color.LightGray)
-            .fillMaxSize()
             .background(Color.White)
             .fillMaxSize()
     ) {
@@ -35,11 +34,4 @@ fun Ejercicio1() {
             )
         }
     }
-    Box(
-        modifier = Modifier
-            .width(50.dp)
-            .height(50.dp)
-            .background(Color.Blue)
-            //.align(Alignment.Center)
-    )
 }
