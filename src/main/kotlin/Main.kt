@@ -4,8 +4,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
-import androidx.compose.ui.text.style.LineHeightStyle
-import androidx.compose.ui.text.style.LineHeightStyle.Alignment.*
 
 fun main() = application {
     val windowsState = rememberWindowState(size = DpSize(1200.dp, 800.dp))
@@ -24,6 +22,8 @@ fun main() = application {
         //Ejercicio6()
         //Ejercicio7()
 
+        Ejercicio1()
+        Ejercicio2()
     }
 
 }
