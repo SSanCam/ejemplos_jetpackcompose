@@ -12,10 +12,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview
-        /**
-         * No se quedan fijados al fondo de la ventana.
-         *
-         */
+
 fun ejercicio5() {
 
     Column(
