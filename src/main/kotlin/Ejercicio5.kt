@@ -19,9 +19,11 @@ import androidx.compose.ui.unit.sp
 fun ejercicio5() {
 
     Column(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Bottom
+        modifier = Modifier
+            .fillMaxWidth()
+            .fillMaxHeight()
+        .padding(top = 16.dp, bottom = 0.dp),
+        verticalArrangement = Arrangement.SpaceBetween
     ) {
 
         // BOX 1
