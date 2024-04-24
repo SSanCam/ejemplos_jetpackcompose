@@ -11,7 +11,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 @Preview
 
-fun Ejercicio3() {
+fun ejercicio3() {
     // Cuatro rectangulos, centrados en la vertical en columna.
 
     Column(

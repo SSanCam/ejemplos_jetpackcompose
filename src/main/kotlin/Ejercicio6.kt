@@ -1,3 +1,3 @@
-fun Ejercicio6(){
+fun ejercicio6(){
 
 }

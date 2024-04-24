@@ -11,7 +11,7 @@ import androidx.compose.ui.text.font.FontWeight
 
 @Composable
 @Preview
-fun Ejercicio2() {
+fun ejercicio2() {
 
     // Cuadrado centrado a la ventana con texto.
     Box(

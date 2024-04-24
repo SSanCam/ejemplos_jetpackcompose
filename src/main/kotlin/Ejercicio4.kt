@@ -14,7 +14,7 @@ import androidx.compose.ui.Alignment.Vertical
 @Composable
 @Preview
 
-fun Ejercicio4() {
+fun ejercicio4() {
     // Cajas en lína horizontal.
 
 Column(

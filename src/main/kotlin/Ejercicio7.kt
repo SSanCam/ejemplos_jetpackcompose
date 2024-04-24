@@ -1,3 +1,3 @@
-fun Ejercicio7() {
+fun ejercicio7() {
 
 }
