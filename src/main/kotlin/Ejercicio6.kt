@@ -11,6 +11,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
+
 @Composable
 @Preview
 
@@ -19,10 +20,10 @@ fun ejercicio6() {
     // Columna principal.
     Column(
         modifier = Modifier
-            //.fillMaxWidth()
-            //.fillMaxHeight()
+            .fillMaxWidth()
+            .fillMaxHeight()
             .padding(top = 0.dp, bottom = 0.dp),
-        verticalArrangement = Arrangement.SpaceBetween
+        //verticalArrangement = Arrangement.SpaceEvenly
     ) {
         // Primera Row
         Row(
@@ -32,8 +33,8 @@ fun ejercicio6() {
             // Box1
             Box(
                 modifier = Modifier
+                    .height(200.dp)
                     .fillMaxWidth()
-                    .height(100.dp)
                     .background(Color.Cyan)
             ) {
                 Text(
@@ -59,6 +60,8 @@ fun ejercicio6() {
             // Box2
             Box(
                 modifier = Modifier
+                    .height(200.dp)
+                    .weight(1f)
                     .background(Color.Blue)
             ) {
                 Text(
@@ -73,6 +76,8 @@ fun ejercicio6() {
             // Box3
             Box(
                 modifier = Modifier
+                    .height(200.dp)
+                    .weight(1f)
                     .background(Color.Green)
             ) {
                 Text(
@@ -87,13 +92,24 @@ fun ejercicio6() {
 
         // Tercer Row
         Row(
-
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center
         ) {
             // Box 4
             Box(
-
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(200.dp)
+                    .background(Color.Magenta)
             ) {
+                Text(
+                    text = "...Combinando Column y Box",
+                    style = TextStyle(
+                        color = Color.Yellow
 
+                    ),
+                    modifier = Modifier.align(Alignment.BottomEnd)
+                )
             } // Fin Box4
         }
 
