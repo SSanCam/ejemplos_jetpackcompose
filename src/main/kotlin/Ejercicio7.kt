@@ -20,6 +20,9 @@ import androidx.compose.ui.unit.dp
 @Composable
 @Preview
 
+fun separacion(){
+
+}
 fun ejercicio7() {
 
     Column(
