@@ -15,7 +15,7 @@ import androidx.compose.ui.window.rememberWindowState
  * Ejercicio5 >
  * Ejercicio6 > Podría hacerse con Columna> Box+Text / Row+2Box / Box+Text
  *                  - Relleno de la caja de texto arreglado.
- * Ejercicio7 > Terminar para incluir la función que pide.
+ * Ejercicio7 > Terminar para incluir la función que pide: MySpacer()
  */
 fun main() = application {
     val windowsState = rememberWindowState(size = DpSize(800.dp, 1200.dp))
