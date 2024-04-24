@@ -10,6 +10,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 
 @Composable
@@ -33,23 +34,24 @@ fun ejercicio6() {
             // Box1
             Box(
                 modifier = Modifier
-                    .height(200.dp)
+                    .height(300.dp)
                     .fillMaxWidth()
                     .background(Color.Cyan)
             ) {
                 Text(
-                    text = " Ejercicio 2 ",
+                    text = "Ejercicio 2",
                     modifier = Modifier
-                        .padding(top = 5.dp)
+                        .padding(10.dp)
                         .border(2.dp, Color.Black)
                         .align(Alignment.TopCenter),
                     style = TextStyle(
                         color = Color.Blue,
                         fontWeight = FontWeight.Bold,
                         background = Color.Yellow,
+                        fontSize = 30.sp
                     )
                 )
-            } // Fin BOX1
+            }
         }
 
         // Segunda Row
@@ -60,34 +62,36 @@ fun ejercicio6() {
             // Box2
             Box(
                 modifier = Modifier
-                    .height(200.dp)
+                    .height(300.dp)
                     .weight(1f)
                     .background(Color.Blue)
             ) {
                 Text(
                     text = "PMDM",
                     style = TextStyle(
-                        color = Color.White
+                        color = Color.White,
+                        fontSize = 30.sp
                     ),
                     modifier = Modifier.align(Alignment.BottomCenter)
                 )
-            } // Fin Box2
+            }
 
             // Box3
             Box(
                 modifier = Modifier
-                    .height(200.dp)
+                    .height(300.dp)
                     .weight(1f)
                     .background(Color.Green)
             ) {
                 Text(
                     text = "DAM 2",
                     style = TextStyle(
-                        color = Color.Black
+                        color = Color.Black,
+                        fontSize = 30.sp
                     ),
                     modifier = Modifier.align(Alignment.Center)
                 )
-            } // Fin Box3
+            }
         }
 
         // Tercer Row
@@ -99,18 +103,18 @@ fun ejercicio6() {
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(200.dp)
+                    .height(300.dp)
                     .background(Color.Magenta)
             ) {
                 Text(
                     text = "...Combinando Column y Box",
                     style = TextStyle(
-                        color = Color.Yellow
-
+                        color = Color.Yellow,
+                        fontSize = 22.sp
                     ),
                     modifier = Modifier.align(Alignment.BottomEnd)
                 )
-            } // Fin Box4
+            }
         }
 
     } // Fin Columna.
