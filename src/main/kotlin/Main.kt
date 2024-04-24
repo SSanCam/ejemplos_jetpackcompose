@@ -23,13 +23,18 @@ fun main() = application {
         onCloseRequest = ::exitApplication,
         title = "Ejemplo para practicar",
         state = windowsState
-    ) {
+    ){
+
+    }
+}
+/*
+{
         //ejercicio1()
         //ejercicio2()
         //ejercicio3()
         //ejercicio4()
         //ejercicio5()
-        ejercicio6()
+        //ejercicio6()
         //ejercicio7()
     }
-}
+ */
