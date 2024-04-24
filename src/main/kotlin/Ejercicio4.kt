@@ -9,7 +9,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.Alignment.Vertical
 
 @Composable
 @Preview
@@ -19,7 +18,8 @@ fun ejercicio4() {
 
 Column(
     modifier = Modifier
-        .fillMaxSize(),
+        .fillMaxSize()
+        .fillMaxHeight(),
     verticalArrangement = Arrangement.Bottom,
     horizontalAlignment = Alignment.CenterHorizontally
 )

@@ -22,7 +22,7 @@ fun ejercicio5() {
         modifier = Modifier
             .fillMaxWidth()
             .fillMaxHeight()
-        .padding(top = 16.dp, bottom = 0.dp),
+        .padding(top = 0.dp, bottom = 0.dp),
         verticalArrangement = Arrangement.SpaceBetween
     ) {
 

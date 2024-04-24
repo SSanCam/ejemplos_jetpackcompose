@@ -12,7 +12,6 @@ import androidx.compose.ui.unit.dp
 @Preview
 
 fun ejercicio3() {
-    // Cuatro rectangulos, centrados en la vertical en columna.
 
     Column(
         modifier = Modifier.fillMaxSize(),

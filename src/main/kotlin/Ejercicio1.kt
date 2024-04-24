@@ -14,8 +14,7 @@ import androidx.compose.ui.Alignment
 @Composable
 @Preview
 fun Ejercicio1() {
-    // Uso único Box
-    // Cuadrado centrado a la ventana.
+
     Box(
         modifier = Modifier
             .background(Color.White)
