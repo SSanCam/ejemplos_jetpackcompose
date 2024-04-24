@@ -17,7 +17,7 @@ fun main() = application {
         //ejercicio3()
         //ejercicio4()
         //ejercicio5()
-        //ejercicio6()
+        ejercicio6()
         //ejercicio7()
     }
 }

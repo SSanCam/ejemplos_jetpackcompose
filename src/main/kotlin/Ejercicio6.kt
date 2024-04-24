@@ -15,7 +15,13 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview
-
+        /**
+         * Podría usarse:
+         * Column
+         *      Box + text
+         *      Row + Box x 2
+         *      Box + Text
+         */
 fun ejercicio6() {
 
     // Columna principal.
@@ -43,6 +49,7 @@ fun ejercicio6() {
                     modifier = Modifier
                         .padding(10.dp)
                         .border(2.dp, Color.Black)
+                        .padding(10.dp)
                         .align(Alignment.TopCenter),
                     style = TextStyle(
                         color = Color.Blue,
