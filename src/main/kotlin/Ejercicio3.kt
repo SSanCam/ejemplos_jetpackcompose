@@ -12,7 +12,7 @@ import androidx.compose.ui.unit.dp
 @Preview
 
 fun ejercicio3() {
-
+// No hace falta hacer todas las Box, simplemente texto y color.
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
