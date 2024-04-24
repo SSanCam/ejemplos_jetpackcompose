@@ -14,7 +14,7 @@ import androidx.compose.ui.Alignment
 @Composable
 @Preview
 fun Ejercicio1() {
-// Meter sólo dos Box !!
+
     Box(
         modifier = Modifier
             .background(Color.White)

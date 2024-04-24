@@ -14,7 +14,6 @@ import androidx.compose.ui.unit.dp
 @Preview
 
 fun ejercicio4() {
-    // Cajas en lína horizontal.
 
 Column(
     modifier = Modifier

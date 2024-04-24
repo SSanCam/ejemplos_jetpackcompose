@@ -15,13 +15,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview
-        /**
-         * Podría usarse:
-         * Column
-         *      Box + text
-         *      Row + Box x 2
-         *      Box + Text
-         */
+
 fun ejercicio6() {
 
     // Columna principal.
