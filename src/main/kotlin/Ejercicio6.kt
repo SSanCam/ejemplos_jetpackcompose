@@ -40,17 +40,17 @@ fun ejercicio6() {
             ) {
                 Text(
                     text = "Ejercicio 2",
-                    modifier = Modifier
-                        .padding(10.dp)
-                        .border(2.dp, Color.Black)
-                        .padding(10.dp)
-                        .align(Alignment.TopCenter),
                     style = TextStyle(
                         color = Color.Blue,
                         fontWeight = FontWeight.Bold,
-                        background = Color.Yellow,
                         fontSize = 30.sp
-                    )
+                    ),
+                    modifier = Modifier
+                        .padding(10.dp)
+                        .background(Color.Yellow)
+                        .border(5.dp, Color.Black)
+                        .padding(10.dp)
+                        .align(Alignment.TopCenter)
                 )
             }
         }

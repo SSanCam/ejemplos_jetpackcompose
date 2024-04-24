@@ -14,6 +14,7 @@ import androidx.compose.ui.window.rememberWindowState
  * Ejercicio4 > Puede eliminarse la columna principal y dejar Row anclado al fondo. -->
  * Ejercicio5 >
  * Ejercicio6 > Podría hacerse con Columna> Box+Text / Row+2Box / Box+Text
+ *                  - Relleno de la caja de texto arreglado.
  * Ejercicio7 > Terminar para incluir la función que pide.
  */
 fun main() = application {
@@ -24,7 +25,7 @@ fun main() = application {
         title = "Ejemplo para practicar",
         state = windowsState
     ){
-
+        ejercicio6()
     }
 }
 /*
