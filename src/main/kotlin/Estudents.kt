@@ -19,7 +19,6 @@ import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 
 @Preview
-@Composable
 
 fun main() = application {
     val windowsState = rememberWindowState(size = DpSize(800.dp, 1200.dp))
@@ -29,7 +28,7 @@ fun main() = application {
         title = "Estudents list",
         state = windowsState
     ){
-        MainScreen()
+        MainScreen3()
     }
 }
 
@@ -52,7 +51,9 @@ fun StudentList() {
         }
     }
 }
-fun MainScreen() {
+
+@Composable
+fun MainScreen3() {
     Surface(
         color = Color.LightGray,
         modifier = Modifier.fillMaxSize()
@@ -61,7 +62,7 @@ fun MainScreen() {
     }
 }
 
-
+@Composable
 fun StudentText(name: String) {
     Text(
         text = name,
