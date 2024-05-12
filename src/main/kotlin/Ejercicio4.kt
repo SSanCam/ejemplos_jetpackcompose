@@ -16,26 +16,24 @@ import androidx.compose.ui.window.rememberWindowState
 
 
 fun main() = application {
-    val windowsState = rememberWindowState(size = DpSize(800.dp, 1200.dp))
+    val windowsState = rememberWindowState(size = DpSize(400.dp, 600.dp))
 
     Window(
         onCloseRequest = ::exitApplication,
-        title = "Ejemplo para practicar",
+        title = "MyRow 1",
         state = windowsState
-    ){
+    ) {
         ejercicio4()
     }
 }
 
 @Composable
 @Preview
-// TODO ("Ejercicio4 > Puede eliminarse la columna principal y dejar Row anclado al fondo.")
 fun ejercicio4() {
 
 Column(
     modifier = Modifier
-        .fillMaxSize()
-        .fillMaxHeight(),
+        .fillMaxSize(),
     verticalArrangement = Arrangement.Bottom,
     horizontalAlignment = Alignment.CenterHorizontally
 )
@@ -44,7 +42,7 @@ Column(
             modifier = Modifier
                 .fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly,
-            verticalAlignment = Alignment.Bottom
+            verticalAlignment = Alignment.Bottom,
         ) {
             // Rectángulo1
             Box(

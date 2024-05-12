@@ -1,5 +1,6 @@
 import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Text
@@ -8,8 +9,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
@@ -21,19 +25,17 @@ import androidx.compose.ui.window.rememberWindowState
  */
 
 fun main() = application {
-    val windowsState = rememberWindowState(size = DpSize(800.dp, 1200.dp))
+    val windowsState = rememberWindowState(size = DpSize(400.dp, 600.dp))
 
     Window(
         onCloseRequest = ::exitApplication,
-        title = "Ejemplo para practicar",
+        title = "CustomSpacer",
         state = windowsState
-    ){
+    ) {
         ejercicio7()
     }
 }
 
-
-// TODO("Terminar para incluir la función que pide: MySpacer()")
 @Composable
 @Preview
 
@@ -41,67 +43,83 @@ fun ejercicio7() {
 
     Column(
         modifier = Modifier
-            .fillMaxSize()
-            .fillMaxHeight(),
-        verticalArrangement = Arrangement.Bottom,
-        horizontalAlignment = Alignment.CenterHorizontally
-    )
-    {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly,
-            verticalAlignment = Alignment.Bottom
-        ) {
-            // Rectángulo1
-            Box(
-                modifier = Modifier
-                    .height(500.dp)
-                    .width(75.dp)
-                    .border(BorderStroke(2.dp, Color.Red), shape = RectangleShape)
-            ) {
-                Text(
-                    text = "Ejemplo 1",
-                    modifier = Modifier.align(Alignment.TopCenter)
-                )
-            }
-            // Rectángulo 2
-            Box(
-                modifier = Modifier
-                    .height(350.dp)
-                    .width(75.dp)
-                    .border(BorderStroke(2.dp, Color.Blue), shape = RectangleShape)
-            ) {
-                Text(
-                    text = "Ejemplo 2",
-                    modifier = Modifier.align(Alignment.TopCenter)
-                )
-            }
-            // Rectángulo 3
-            Box(
-                modifier = Modifier
-                    .height(100.dp)
-                    .width(75.dp)
-                    .border(BorderStroke(2.dp, Color.Red), shape = RectangleShape)
-            ) {
-                Text(
-                    text = "Ejemplo 3",
-                    modifier = Modifier.align(Alignment.TopCenter)
-                )
-            }
-            // Rentángulo 4
-            Box(
-                modifier = Modifier
-                    .height(50.dp)
-                    .width(75.dp)
-                    .border(BorderStroke(2.dp, Color.Blue), shape = RectangleShape)
-            ) {
-                Text(
-                    text = "Ejemplo 4",
-                    modifier = Modifier.align(Alignment.TopCenter)
-                )
-            }
-        }
-    }
+            .fillMaxWidth()
+            .fillMaxHeight()
+            .padding(top = 0.dp, bottom = 0.dp),
+        verticalArrangement = Arrangement.SpaceBetween
+    ) {
 
+        // BOX 1
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(100.dp)
+                .background(Color.Cyan)
+        ) {
+            Text(
+                text = "BOX1",
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    color = Color.Black
+                ),
+                modifier = Modifier.align(Alignment.Center)
+            )
+        }
+        CustomSpacer(50.dp)
+        // BOX 2
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(100.dp)
+                .background(Color.LightGray)
+        ) {
+            Text(
+                text = "BOX2",
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    color = Color.Black
+                ),
+                modifier = Modifier.align(Alignment.Center)
+            )
+        }
+        CustomSpacer(100.dp)
+        //BOX 3
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(100.dp)
+                .background(Color.Green)
+        ) {
+            Text(
+                text = "BOX3",
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    color = Color.Black
+                ),
+                modifier = Modifier.align(Alignment.Center)
+            )
+        }
+        CustomSpacer(25.dp)
+        // BOX 4
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(100.dp)
+                .background(Color.Magenta)
+        ) {
+            Text(
+                text = "BOX4",
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    color = Color.Black
+                ),
+                modifier = Modifier.align(Alignment.Center)
+            )
+        }
+    } // Fin columna
+}
+
+@Composable
+fun CustomSpacer(height: Dp) {
+    Spacer(modifier = Modifier.height(height))
 }

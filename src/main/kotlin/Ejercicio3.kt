@@ -15,7 +15,7 @@ fun main() = application {
     val windowsState = rememberWindowState(size = DpSize(800.dp, 1200.dp))
 
     Window(
-        onCloseRequest = ::exitApplication, title = "Ejemplo para practicar", state = windowsState
+        onCloseRequest = ::exitApplication, title = "My Column", state = windowsState
     ) {
         ejercicio3()
     }
