@@ -18,12 +18,13 @@ fun main() = application {
 
     Window(
         onCloseRequest = ::exitApplication,
-        title = "Ejemplo para practicar",
+        title = "MyBox",
         state = windowsState
     ){
         ejercicio2()
     }
 }
+
 
 @Composable
 @Preview
@@ -44,15 +45,16 @@ fun ejercicio2() {
                     .width(300.dp)
                     .height(200.dp)
                     .background(Color.Cyan),
-            ) {
+            ){
                 Text(
-                    text = "Esto es un EJEMPLO de uso de Box.",
-                    color = Color.Black,
+                    text = "Ésto es un EJEMPLO del uso de box",
                     fontWeight = FontWeight.Bold,
-                    modifier = Modifier.align(Alignment.BottomCenter)
+                    color = Color.Black,
+                    modifier = Modifier
+                        .align(Alignment.BottomCenter)
+                        .padding(bottom = 5.dp)
                 )
             }
-
         }
     }
 }
