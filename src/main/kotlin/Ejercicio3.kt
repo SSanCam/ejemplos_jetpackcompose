@@ -1,4 +1,3 @@
-import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Text
@@ -16,17 +15,56 @@ fun main() = application {
     val windowsState = rememberWindowState(size = DpSize(800.dp, 1200.dp))
 
     Window(
-        onCloseRequest = ::exitApplication,
-        title = "Ejemplo para practicar",
-        state = windowsState
-    ){
+        onCloseRequest = ::exitApplication, title = "Ejemplo para practicar", state = windowsState
+    ) {
         ejercicio3()
     }
 }
 
+// SÓLO USANDO COLUMNA Y TEXT
+@Composable
+fun ejercicio3() {
+    Column(
+        modifier = Modifier.fillMaxSize().background(color = Color.White),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.SpaceEvenly
+    ) {
+        Text(
+            "Ejemplo 1",
+            modifier = Modifier
+                .background(Color.Red)
+                .padding(16.dp)
+                .weight(2f)
+        )
+        Text(
+            "Ejemplo 2",
+            modifier = Modifier
+                .background(Color.LightGray)
+                .padding(16.dp)
+                .weight(3f)
+        )
+        Text(
+            "Ejemplo 3",
+            modifier = Modifier
+                .background(Color.Cyan)
+                .padding(16.dp)
+                .height(400.dp)
+                .weight(3f)
+        )
+        Text(
+            "Ejemplo 4",
+            modifier = Modifier
+                .background(Color.Green)
+                .padding(16.dp)
+                .height(200.dp)
+                .weight(2f)
+        )
+    }
+}
+
+/* FORMA CON CAJAS
 @Composable
 @Preview
- // TODO("Ejercicio3 > No hace falta hacer todas las Box, simplemente texto y color.")
 fun ejercicio3() {
 // No hace falta hacer todas las Box, simplemente texto y color.
     Column(
@@ -85,3 +123,4 @@ fun ejercicio3() {
     }
 
 }
+*/
